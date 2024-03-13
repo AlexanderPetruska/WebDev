@@ -1,0 +1,39 @@
+body {
+  font-family: Roboto, Arial;
+}
+
+.subsribe-button {
+  background-color: black;
+  color: white;
+  padding: 0.8em;
+  max-width: max-content;
+  border-radius: 100rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 520;
+  margin-bottom: 100px;
+}
+
+.subscribed-button {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+.input {
+  padding: 0.6em;
+  height: 1.3rem;
+  width: 100%;
+  max-width: 10rem;
+  font-size: 15px;
+}
+
+.calculate-button {
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  max-height: 43px;
+  height: 43px;
+  background-color: green;
+  color: white;
+  padding: 0.9em 1.5em;
+}

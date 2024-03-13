@@ -1,0 +1,106 @@
+body {
+  font-family: Arial;
+  background-color: rgb(25, 25, 25);
+  color: white;
+}
+
+h1 {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: 50%; /* Ensure images maintain aspect ratio */
+}
+
+.vyber_button {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.vyber_button:hover {
+  border-color: rgb(248, 198, 0);
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section_vyber {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section_vysledky img {
+  width: 70px;
+  margin-inline: 0.2rem;
+}
+
+.vybery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.vysledok {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.reset {
+  border: none;
+  background-color: rgb(248, 198, 0);
+  border-radius: 100vh;
+  padding: 0.8em;
+  color: white;
+  cursor: pointer;
+  margin-inline: auto;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  font-size: 15px;
+}
+
+.reset:hover {
+  padding: 1em;
+  box-shadow: 22px 22px 75px -41px rgba(0, 0, 0, 1);
+  background-color: rgb(255, 187, 0);
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 700px) {
+  .vyber_button {
+    width: 100px;
+    height: 100px;
+  }
+
+  .vysledok {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .section_vysledky img {
+    width: 50px;
+    margin-inline: 0.2rem;
+  }
+
+  .reset {
+    font-size: 13px;
+  }
+
+  .section_vysledky p {
+    font-size: 14px;
+  }
+}

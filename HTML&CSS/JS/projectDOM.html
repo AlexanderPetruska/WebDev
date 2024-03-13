@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/projectDOM.css" />
+    <title>DOM PROJECT</title>
+  </head>
+  <body>
+    <p>YouTube Subscribe Button!</p>
+    <button onclick="subscribe()" class="js-subsribe-button subsribe-button">
+      Subscribe
+    </button>
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = Free Shipping</p>
+    <input
+      placeholder="Cost Of Order"
+      class="js-input input"
+      onkeydown="handleCostKeyDown(event)"
+    />
+    <button onclick="calculateTotal()" class="calculate-button">
+      Calculate
+    </button>
+    <p class="js-cena"></p>
+
+    <script>
+      function calculateTotal() {
+        const inputElement = document.querySelector(".js-input");
+        let cenaNakupu = Number(inputElement.value);
+
+        if (cenaNakupu < 40) {
+          cenaNakupu += 10;
+        }
+
+        document.querySelector(".js-cena").innerHTML = `$${cenaNakupu}`;
+      }
+
+      function handleCostKeyDown(event) {
+        if (event.key === "Enter") {
+          calculateTotal();
+        }
+      }
+
+      function subscribe() {
+        const buttonElement = document.querySelector(".js-subsribe-button");
+
+        if (buttonElement.innerText === "Subscribe") {
+          buttonElement.innerText = "Subscribed";
+          buttonElement.classList.add("subscribed-button");
+        } else {
+          buttonElement.innerText = "Subscribe";
+          buttonElement.classList.remove("subscribed-button");
+        }
+      }
+    </script>
+  </body>
+</html>

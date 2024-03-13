@@ -1,0 +1,101 @@
+p {
+    font-family: Roboto, Arial;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 110px;
+    padding-right: 20px;
+    background-color: rgb(247, 247, 247);
+}
+
+.video-top {
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+    cursor: pointer;
+}
+
+.time {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    background-color: black;
+    color: white;
+    padding: 0.3em;
+    font-family: Roboto, Arial;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.channel-profile-pic {    
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.video-title {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.video-autor,
+.video-stats {
+    font-size: 12px;
+    color: gray;
+}
+
+.video-autor {
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.video-info {
+    margin-left: 10px;
+}
+
+.video-everything {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-column: 50px, 1fr;
+}
+
+.profilepic {
+    width: 45px;
+    border-radius: 50%;
+    padding-left: 5px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+@media (max-width: 800px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
