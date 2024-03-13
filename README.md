@@ -1,2 +1,3 @@
 # WebDev
-My learning process of web development
+
+My learning process of web development and git
